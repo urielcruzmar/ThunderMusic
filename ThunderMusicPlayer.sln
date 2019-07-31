@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThunderMusicPlayer", "ThunderMusicPlayer\ThunderMusicPlayer.csproj", "{B0D24319-3E02-4352-95F4-658F16CA455E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ThunderMusicInstaller", "ThunderMusicInstaller\ThunderMusicInstaller.vdproj", "{61429615-6439-44D5-B4CD-F6A2011A6019}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0D24319-3E02-4352-95F4-658F16CA455E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0D24319-3E02-4352-95F4-658F16CA455E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0D24319-3E02-4352-95F4-658F16CA455E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0D24319-3E02-4352-95F4-658F16CA455E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61429615-6439-44D5-B4CD-F6A2011A6019}.Debug|Any CPU.ActiveCfg = Debug
+		{61429615-6439-44D5-B4CD-F6A2011A6019}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFEDB3F0-C7D3-4A5A-9947-A764D733369C}
+	EndGlobalSection
+EndGlobal

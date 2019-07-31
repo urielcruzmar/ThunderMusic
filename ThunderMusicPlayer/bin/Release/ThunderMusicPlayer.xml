@@ -1,0 +1,939 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ThunderMusicPlayer</name>
+    </assembly>
+    <members>
+        <member name="T:ThunderMusicPlayer.Browse">
+            <summary>
+            Handles the browser of songs
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Browse.#ctor">
+            <summary>
+            loads the browse components and the list
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Browse.search">
+            <summary>
+            the search button onclick
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Browse.song_list_click(System.Object,System.EventArgs)">
+            <summary>
+            the listbox onclick
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Browse.action_search_click(System.Object,System.EventArgs)">
+            <summary>
+            everytime the user looks for abstract song, this executes
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Browse.key_typed(System.Object,System.EventArgs)">
+            <summary>
+            this event is called everytime the user types something in the text
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Browse.search_criteria_click(System.Object,System.EventArgs)">
+            <summary>
+            called when the user uses the text that is user to search
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Browse.Browse_Load(System.Object,System.EventArgs)">
+            <summary>
+            When the browser dock loads, it fill himself in the aplication space
+            </summary>
+        </member>
+        <member name="F:ThunderMusicPlayer.Browse.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Browse.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:ThunderMusicPlayer.Browse.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Info.Info_Load(System.Object,System.EventArgs)">
+            <summary>
+            Loads the text of the info panel
+            </summary>
+        </member>
+        <member name="F:ThunderMusicPlayer.Info.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Info.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:ThunderMusicPlayer.Info.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:ThunderMusicPlayer.LogIn">
+            <summary>
+            Handles the login
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.LogIn.#ctor(System.Windows.Forms.TableLayoutPanel,ThunderMusicPlayer.WelcomeScreen)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="table_panel_main">Main panel of welcome screen</param>
+            <param name="welcomeScreen">WelcomeScreen</param>
+        </member>
+        <member name="M:ThunderMusicPlayer.LogIn.btn_enter_Click(System.Object,System.EventArgs)">
+            <summary>
+            Tries to log in into the database
+            </summary>
+            <remarks>
+            If the login fails, a popup shows to inform the user
+            </remarks>
+        </member>
+        <member name="M:ThunderMusicPlayer.LogIn.connect">
+            <summary>
+            Connect to database
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.LogIn.email_click(System.Object,System.EventArgs)">
+            <summary>
+            The email field clears when clicked on the first time
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.LogIn.pass_click(System.Object,System.EventArgs)">
+            <summary>
+            The password field clears when clicked on the first time
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.LogIn.btn_cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            Hides login and shows Welcome Screen
+            </summary>
+        </member>
+        <member name="F:ThunderMusicPlayer.LogIn.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.LogIn.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:ThunderMusicPlayer.LogIn.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:ThunderMusicPlayer.Main">
+            <summary>
+            Main Window of the music player
+            </summary>
+            <remarks>
+            From here you can access to all the features
+            </remarks>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="text">User mail</param>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.Main_Load(System.Object,System.EventArgs)">
+            <summary>
+            Load form
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.btn_home_Click(System.Object,System.EventArgs)">
+            <summary>
+            Loads home control in main panel
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.btn_browse_Click(System.Object,System.EventArgs)">
+            <summary>
+            Loads browse in main panel
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.btn_add_favorite_song_bar_Click(System.Object,System.EventArgs)">
+            <summary>
+            Adds or remove a song from favorites
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.btn_upload_Click(System.Object,System.EventArgs)">
+            <summary>
+            Shows up a window to upload your songs, and it copies them into the music user folder
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.btn_user_Click(System.Object,System.EventArgs)">
+            <summary>
+            Shows the profile with options
+            </summary>
+            <remarks>
+            You can change name, image and password
+            </remarks>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.connect">
+            <summary>
+            Connecto to database
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.btn_hide_show_left_bar_Click(System.Object,System.EventArgs)">
+            <summary>
+            Shows or hides left bar
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.show_left_bar_txt(System.Boolean)">
+            <summary>
+            Shows/hides left bar text
+            </summary>
+            <param name="option">Show or hide</param>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.btn_play_stop_Click(System.Object,System.EventArgs)">
+            <summary>
+            If it is playing music, it pauses it, if not, it starts to play the songs
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.SetTagsBottomBar">
+            <summary>
+            Set Title, Artist and Image to bottom bar
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.btn_next_song_Click(System.Object,System.EventArgs)">
+            <summary>
+            Starts to play the next song in the list
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.btn_previous_song_Click(System.Object,System.EventArgs)">
+            <summary>
+            Starts to play the previous song in the list
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.btn_repeat_Click(System.Object,System.EventArgs)">
+            <summary>
+            Sets the play mode to repeat mode, and listen allways to the same song
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.btn_shuffle_Click(System.Object,System.EventArgs)">
+            <summary>
+            Shufles the playlist array and creates a copy to change back to normal mode
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.btn_library_Click(System.Object,System.EventArgs)">
+            <summary>
+            Shows the current song and the nexts that will be played
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.btn_volume_mute_Click(System.Object,System.EventArgs)">
+            <summary>
+            Mute and save volume value to unmute
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.volume_changed(System.Object,System.EventArgs)">
+            <summary>
+            It syncronizes the volume bar from the media player to ours
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.time_changed_action">
+            <summary>
+            This function syncronizes the media_player progress bar with ours and updates the text that shows how it goes
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.tick(System.Object,System.EventArgs)">
+            <summary>
+            It ticks every second to update the progress bar that controls the current time on the song
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.play_state_changed(System.Object,AxWMPLib._WMPOCXEvents_PlayStateChangeEvent)">
+            <summary>
+            Checks the current status of the player and performs diferent acctions based on the settings of the user
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.sincList">
+            <summary>
+            Sincronizes the current song with the list
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.sincListFav">
+            <summary>
+            Sincronizes the current favorite song with the list
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.sincListBrowse">
+            <summary>
+            Sincronizes the current browsed song with the list
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.list_click(System.Object,System.EventArgs)">
+            <summary>
+            Plays the clicked song in the main panel
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.list_click_browse(System.Object,System.EventArgs)">
+            <summary>
+            Plays the clicked song in the main panel
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.list_click_fav(System.Object,System.EventArgs)">
+            <summary>
+            Plays the clicked favorite song in the main panel
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.hide_all">
+            <summary>
+            Hides all components of main panel
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.loadList">
+            <summary>
+            Load the current songs list and shows it 
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.loadListFavorite">
+            <summary>
+            Loads the favorites song list and shows it
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.loadListBrowse">
+            <summary>
+            Loads the browse song list and shows it
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.searchButton(System.Object,System.EventArgs)">
+            <summary>
+            When the user wants to search abstract song, this reads the criteria and filters the list
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.favourited(System.String)">
+            <summary>
+            Checks if a song is in favourites list
+            </summary>
+        </member>
+        <member name="F:ThunderMusicPlayer.Main.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:ThunderMusicPlayer.Main.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Home.add_song_Click(System.Object,System.EventArgs)">
+            <summary>
+            Open the file selecctión to get abstract file in the app
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Home.click">
+            <summary>
+            this function is called when the add song button is pressed
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Home.Home_Load(System.Object,System.EventArgs)">
+            <summary>
+            Loads the main filling the gaps to make it look better
+            </summary>
+        </member>
+        <member name="F:ThunderMusicPlayer.Home.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Home.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:ThunderMusicPlayer.Home.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:ThunderMusicPlayer.Profile">
+            <summary>
+            Class dedicated to update user info: username, password and image
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Profile.load_user_data">
+            <summary>
+            Set the user's info when this usercontrol is open on the fields
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Profile.profile_pic_Click(System.Object,System.EventArgs)">
+            <summary>
+            To set the user image when user clicks the pic
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Profile.btn_yes_Click(System.Object,System.EventArgs)">
+            <summary>
+            When the user clicks the 'UPDATE' button, the info they entered is inserted on the database
+            If the user doesn't set a new pass, it will not be update
+            As the 'mail' field is the primary key, we do not allow users to change it
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Profile.Profile_Load(System.Object,System.EventArgs)">
+            <summary>
+            Invoke load_user_data() method when this UserControl is called
+            </summary>
+        </member>
+        <member name="F:ThunderMusicPlayer.Profile.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Profile.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:ThunderMusicPlayer.Profile.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Program.Main">
+            <summary>
+            Main entry to run the app
+            </summary>
+        </member>
+        <member name="T:ThunderMusicPlayer.Register">
+            <summary>
+            Handle register
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Register.#ctor(System.Windows.Forms.TableLayoutPanel,ThunderMusicPlayer.WelcomeScreen)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="table_panel_main">Main panel of welcome screen</param>
+            <param name="welcomeScreen">WelcomeScreen</param>
+        </member>
+        <member name="M:ThunderMusicPlayer.Register.btn_complete_register_Click(System.Object,System.EventArgs)">
+            <summary>
+            When register button is clicked, a new user is registered
+            </summary>
+            <remarks>
+            If there is an error a pop up error message appears
+            </remarks>
+        </member>
+        <member name="M:ThunderMusicPlayer.Register.connect">
+            <summary>
+            Connect to database
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Register.btn_cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            Hide the register and goes back to the main screen
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Register.username_click(System.Object,System.EventArgs)">
+            <summary>
+            The username field clears when clicked on the first time
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Register.email_click(System.Object,System.EventArgs)">
+            <summary>
+            The email field clears when clicked on the first time
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Register.pass_click(System.Object,System.EventArgs)">
+            <summary>
+            The password field clears when clicked on the first time
+            </summary>
+        </member>
+        <member name="F:ThunderMusicPlayer.Register.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Register.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:ThunderMusicPlayer.Register.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:ThunderMusicPlayer.SongList">
+            <summary>
+            Control that contains the songs lists and handles the click events
+            </summary>
+        </member>
+        <member name="F:ThunderMusicPlayer.SongList.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.SongList.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:ThunderMusicPlayer.SongList.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:ThunderMusicPlayer.SuccessPop.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.SuccessPop.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ThunderMusicPlayer.SuccessPop.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ThunderMusicPlayer.Welcome.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.Welcome.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:ThunderMusicPlayer.Welcome.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:ThunderMusicPlayer.WelcomeScreen">
+            <summary>
+            First screen with login and register options
+            </summary>
+            <remarks>
+            This class handles the login and register calling to login and register usercontrols
+            </remarks>
+        </member>
+        <member name="M:ThunderMusicPlayer.WelcomeScreen.btn_close_win_Click(System.Object,System.EventArgs)">
+            <summary>
+            Close the welcome screen
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.WelcomeScreen.btn_login_Click(System.Object,System.EventArgs)">
+            <summary>
+            Shows and handles the login options
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.WelcomeScreen.btn_register_Click(System.Object,System.EventArgs)">
+            <summary>
+            Shows and handles the register options
+            </summary>
+        </member>
+        <member name="F:ThunderMusicPlayer.WelcomeScreen.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ThunderMusicPlayer.WelcomeScreen.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ThunderMusicPlayer.WelcomeScreen.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ThunderMusicPlayer.Properties.Resources">
+            <summary>
+              Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_accessibility_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_add_comment_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_add_photo_alternate_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_add_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_album_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_alternate_email_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_chat_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_chevron_left_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_chevron_right_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_cloud_off_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_cloud_queue_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_create_new_folder_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_delete_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_edit_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_equalizer_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_expand_less_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_expand_more_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_explore_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_favorite_border_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_favorite_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_folder_open_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_folder_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_home_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_info_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_language_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_library_music_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_mobile_friendly_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_mobile_off_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_monetization_on_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_open_in_browser_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_people_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_person_add_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_person_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_queue_music_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_remove_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_save_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_send_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_settings_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_store_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_translate_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_unarchive_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_vpn_key_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_wallpaper_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.baseline_warning_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.material_back">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_close_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_maximize_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_minimize_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_more_horiz_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_pause_circle_filled_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_pause_circle_outline_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_play_circle_filled_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_play_circle_filled_white_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_playlist_play_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_repeat_one_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_repeat_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_search_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_shuffle_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_skip_next_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_skip_previous_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_volume_down_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_volume_mute_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_volume_off_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.outline_volume_up_white_48dp">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.pika_meme">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.thunder_music">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.trianglify">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ThunderMusicPlayer.Properties.Resources.trianglify_1_">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
